@@ -1,0 +1,340 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background-color: rgb(255, 200, 49);
+    padding: 6px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+nav a {
+    white-space: nowrap;
+    font-family: 'Cascadia Code';
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+nav2 img {
+    display: block;
+}
+
+.logo {
+    width: 170px;
+    height: 80px;
+    margin-right: 8px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.hero-image-wrapper {
+    position: relative;
+    top: -1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    max-width: 900px;
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-link {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+.hero-link-github {
+    top: 53%;
+    left: 51.5%;
+    width: 20%;
+    height: 21%;
+}
+
+.hero-link-youtube {
+    top: 77%;
+    left: 51.5%;
+    width: 20%;
+    height: 17%;
+}
+
+.hero-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Consolas', monospace;
+    color: white;
+}
+
+h1,
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+body {
+    padding-top: 130px;
+    background-color: rgb(32, 32, 32);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+h1[id] {
+    scroll-margin-top: 140px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 0 5px 5px;
+}
+
+.rainbow-link {
+    font-weight: bold;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: rainbow-text 3s linear infinite;
+    color: #ff0000;
+}
+
+@keyframes rainbow-text {
+    0% { color: #ff0000; }
+    14% { color: #ff7f00; }
+    28% { color: #ffff00; }
+    42% { color: #00ff00; }
+    56% { color: #0000ff; }
+    70% { color: #4b0082; }
+    84% { color: #8b00ff; }
+    100% { color: #ff0000; }
+}
+
+.hero-top {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -130px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(17, 17, 17);
+    padding: calc(1.5rem + 130px) 2rem 4rem;
+    border-radius: 0 0 16px 16px;
+}
+
+.hero-top .hero-text {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h4 {
+    font-size: 3em;
+}
+
+h1#projects,
+h1#games {
+    margin-top: 3rem;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-cards + .about-cards {
+    margin-top: 1rem;
+}
+
+.cardAM {
+    display: flex;
+    flex: 1 1 240px;
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+    gap: 1rem;
+    background-color: rgb(53, 53, 53, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cardAM:hover {
+    transform: scale(1.02);
+    box-shadow: 0 9px 20px 0 rgba(18, 18, 18, 0.2);
+    background-color: rgb(73, 73, 73, 1);
+}
+
+.containerAM {
+    padding: 12px;
+    flex: 1;
+}
+
+.cardAM .hero-text {
+    font-size: 1.5em;
+}
+
+
+.card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgb(53, 53, 53, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 1.5rem 0;
+}
+
+.card-link:hover .card,
+.card-link:focus-visible .card {
+    transform: scale(1.02);
+    box-shadow: 0 9px 20px 0 rgba(18, 18, 18, 0.2);
+    background-color: rgb(73, 73, 73, 1);
+}
+
+.card img {
+    display: block;
+    width: 40%;
+    max-width: 260px;
+    flex-shrink: 0;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.45));
+}
+
+.container {
+    padding: 16px;
+    flex: 1;
+}
+
+.card .container p {
+    font-size: 1.7em;
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+@media (max-width: 760px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    background-color: rgb(17, 17, 17);
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+footer p {
+    margin-right: auto;
+}
+
+footer img {
+    height: 35px;
+    width: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgb(53, 53, 53, 0.95);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(53, 53, 53, 0.95) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
